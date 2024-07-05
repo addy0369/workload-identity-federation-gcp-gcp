@@ -6,7 +6,7 @@ def main(request):
 
     # Perform a query.
     QUERY = (
-      'SELECT * FROM 'playground-piotr-7t2f6.audit_logs_play.cloudaudit_googleapis_com_activity_20240705'
+      'SELECT * FROM 'TABLE_NAME'
       'LIMIT 100')
     query_job = client.query(QUERY)  # API request
     rows = query_job.result()  # Waits for query to finish
